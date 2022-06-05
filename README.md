@@ -4,7 +4,7 @@ How it all works?
 
 My task for myself was to build a "basic full stack application" for myself. To connect the frontend to the backend. ie when the user enters and submits information from the UI interface it will "posted" to the backend and the data stored on a DB.
 
-How start the server:
+How to start the server:
 Open the server folder, run the command "npm run devStart" - you will need nodemon to run this command
 
 How to start the client side:
