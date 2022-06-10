@@ -2,6 +2,7 @@ import './App.css'
 import { useState, useEffect } from 'react';
 import Axios from 'axios'
 
+
 function App() {
   const [movieName, setMovieName] = useState('');
   const [review, setReview] = useState('');
@@ -47,13 +48,14 @@ const submitChange = () => {
             <input onChange={updateReview} type="text" name="review" />
             <button onClick={submitChange}>Submit</button>
         </div>
-        <div>
-          <ul>
-            {list.map((ele) => {
-              return <li>{ele.movieName} | {ele.movieReview }</li>
-            })}
-          </ul>
-        </div>
+        <div className="cardlist">
+          {list.map((ele) => {
+          return (
+          <div class="card">
+            <h1>MOVIE :{ele.movieName}</h1> | <h2>Rating: {ele.movieReview }</h2></div>
+            ) })}
+          </div>
+        
     </div>
   );
 }
